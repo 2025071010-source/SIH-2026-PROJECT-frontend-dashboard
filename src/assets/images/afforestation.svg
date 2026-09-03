@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#EEF6F0"/>
+  <rect width="400" height="110" fill="#E1F0E5"/>
+  <path d="M0 110 L100 80 L200 108 L300 78 L400 106 L400 110 Z" fill="#CDE7D6"/>
+  <rect y="110" width="400" height="190" fill="#B7D9A9"/>
+  <!-- planting rows -->
+  <g stroke="#9BC28A" strokeWidth="1.5" opacity="0.6">
+    <line x1="0" y1="150" x2="400" y2="150"/>
+    <line x1="0" y1="190" x2="400" y2="190"/>
+    <line x1="0" y1="230" x2="400" y2="230"/>
+    <line x1="0" y1="270" x2="400" y2="270"/>
+  </g>
+  <!-- saplings in a grid -->
+  <g fill="#3E8E5C">
+    <!-- row 1 -->
+    <circle cx="40" cy="150" r="9"/><circle cx="100" cy="150" r="9"/><circle cx="160" cy="150" r="9"/>
+    <circle cx="220" cy="150" r="9"/><circle cx="280" cy="150" r="9"/><circle cx="340" cy="150" r="9"/>
+    <!-- row 2 -->
+    <circle cx="70" cy="190" r="10"/><circle cx="130" cy="190" r="10"/><circle cx="190" cy="190" r="10"/>
+    <circle cx="250" cy="190" r="10"/><circle cx="310" cy="190" r="10"/><circle cx="360" cy="190" r="10"/>
+    <!-- row 3 -->
+    <circle cx="40" cy="230" r="11"/><circle cx="100" cy="230" r="11"/><circle cx="160" cy="230" r="11"/>
+    <circle cx="220" cy="230" r="11"/><circle cx="280" cy="230" r="11"/><circle cx="340" cy="230" r="11"/>
+    <!-- row 4 -->
+    <circle cx="70" cy="270" r="12"/><circle cx="130" cy="270" r="12"/><circle cx="190" cy="270" r="12"/>
+    <circle cx="250" cy="270" r="12"/><circle cx="310" cy="270" r="12"/>
+  </g>
+  <g stroke="#5C4426" strokeWidth="2">
+    <line x1="40" y1="150" x2="40" y2="159"/><line x1="160" y1="150" x2="160" y2="159"/><line x1="280" y1="150" x2="280" y2="159"/>
+    <line x1="70" y1="190" x2="70" y2="200"/><line x1="190" y1="190" x2="190" y2="200"/><line x1="310" y1="190" x2="310" y2="200"/>
+    <line x1="40" y1="230" x2="40" y2="241"/><line x1="160" y1="230" x2="160" y2="241"/><line x1="280" y1="230" x2="280" y2="241"/>
+  </g>
+  <text x="14" y="24" fontFamily="Inter, sans-serif" fontSize="12" fontWeight="700" fill="#1E7A5C">AFFORESTATION — Village B</text>
+</svg>

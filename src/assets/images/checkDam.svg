@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E9F3EC"/>
+  <rect width="400" height="130" fill="#DCEEE1"/>
+  <path d="M0 130 L80 100 L160 128 L240 96 L320 126 L400 104 L400 130 Z" fill="#BFE1CC"/>
+  <rect y="130" width="400" height="170" fill="#AACB9F"/>
+  <!-- stream before dam -->
+  <path d="M0 175 C60 168 90 182 150 176 L150 210 C90 216 60 202 0 209 Z" fill="#6FA8BA"/>
+  <!-- pooled water behind dam -->
+  <path d="M150 176 C190 170 230 172 260 176 L260 230 C230 236 190 234 150 240 Z" fill="#4A8A9C"/>
+  <!-- check dam structure -->
+  <rect x="150" y="150" width="18" height="110" fill="#8C8577"/>
+  <rect x="150" y="150" width="18" height="110" fill="url(#stoneTexture)" opacity="0.5"/>
+  <g fill="#736C5E">
+    <rect x="152" y="158" width="6" height="6"/>
+    <rect x="160" y="170" width="6" height="6"/>
+    <rect x="153" y="184" width="6" height="6"/>
+    <rect x="161" y="198" width="6" height="6"/>
+    <rect x="152" y="212" width="6" height="6"/>
+    <rect x="160" y="226" width="6" height="6"/>
+    <rect x="153" y="240" width="6" height="6"/>
+  </g>
+  <!-- spillway flow -->
+  <path d="M158 260 C154 268 162 274 158 282" stroke="#DCEEF2" strokeWidth="4" fill="none" opacity="0.85"/>
+  <!-- downstream channel -->
+  <path d="M140 260 C148 272 168 272 178 260 L178 300 L140 300 Z" fill="#6FA8BA"/>
+  <!-- vegetation near banks -->
+  <g fill="#3E8E5C">
+    <circle cx="70" cy="150" r="12"/>
+    <circle cx="90" cy="158" r="9"/>
+    <circle cx="300" cy="145" r="12"/>
+    <circle cx="322" cy="152" r="10"/>
+  </g>
+  <defs>
+    <pattern id="stoneTexture" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="none"/>
+    </pattern>
+  </defs>
+  <text x="14" y="24" fontFamily="Inter, sans-serif" fontSize="12" fontWeight="700" fill="#1E7A5C">CHECK DAM — Village A</text>
+</svg>

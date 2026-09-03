@@ -1,0 +1,205 @@
+/* ==========================================================================
+   GEOVISION — Design tokens
+   Light-mode only. Environmental palette: deep green (vegetation) +
+   slate blue (water) on a soft sage-white surface.
+   ========================================================================== */
+:root {
+  /* Surfaces */
+  --color-bg: #F4F7F5;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F0F4F2;
+  --color-border: #E1E8E4;
+  --color-border-strong: #CBD8D1;
+
+  /* Text */
+  --color-text-primary: #16211C;
+  --color-text-secondary: #5C6B63;
+  --color-text-tertiary: #8B978F;
+  --color-text-inverse: #FFFFFF;
+
+  /* Brand: vegetation green + water blue */
+  --color-primary: #1E7A5C;
+  --color-primary-dark: #145C45;
+  --color-primary-soft: #E5F2EC;
+  --color-accent-blue: #2B6CA3;
+  --color-accent-blue-soft: #E7F0F7;
+
+  /* Status */
+  --color-success: #1E7A5C;
+  --color-success-soft: #E5F2EC;
+  --color-warning: #B4740E;
+  --color-warning-soft: #FBF1DD;
+  --color-danger: #B3261E;
+  --color-danger-soft: #FBEAE9;
+
+  /* Typography */
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Radius / shadow */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 2px rgba(22, 33, 28, 0.05);
+  --shadow-md: 0 2px 8px rgba(22, 33, 28, 0.06);
+
+  --header-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Focus visibility for accessibility */
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-accent-blue);
+  outline-offset: 2px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-7);
+}
+
+@media (max-width: 640px) {
+  .app-main {
+    padding: var(--space-4) var(--space-3) var(--space-6);
+  }
+}
+
+/* ==========================================================================
+   Shared page-level primitives — used by Dashboard, Images, Analysis,
+   and Reports pages so each page file doesn't have to redefine them.
+   ========================================================================== */
+
+.page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+}
+
+.page-subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-top: 4px;
+}
+
+.page-header-controls {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.control-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.control-select {
+  appearance: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 8px 32px 8px 12px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  min-width: 180px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%235C6B63' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  font-family: inherit;
+}
+
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.section-heading-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 560px) {
+  .page-header {
+    align-items: flex-start;
+  }
+  .control-select {
+    min-width: 0;
+    width: 100%;
+  }
+  .page-header-controls {
+    width: 100%;
+  }
+  .control-field {
+    flex: 1;
+  }
+}

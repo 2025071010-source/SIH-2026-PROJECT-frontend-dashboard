@@ -1,0 +1,25 @@
+.gis-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  height: 100%;
+}
+
+.gis-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--space-4);
+  flex: 1;
+  min-height: 560px;
+}
+
+@media (max-width: 900px) {
+  .gis-layout {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .gis-layout > .gis-map-wrap,
+  .gis-layout > div:last-child {
+    min-height: 420px;
+  }
+}

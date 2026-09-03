@@ -1,0 +1,112 @@
+.priority-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+}
+
+.priority-card-header {
+  margin-bottom: var(--space-4);
+}
+
+.priority-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.priority-table-wrap {
+  overflow-x: auto;
+}
+
+.priority-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.priority-table th {
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-tertiary);
+  padding: 0 var(--space-3) var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.priority-table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.priority-table tr:last-child td {
+  border-bottom: none;
+}
+
+.priority-row-clickable {
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.priority-row-clickable:hover {
+  background: var(--color-surface-muted);
+}
+
+.priority-view-link {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-accent-blue);
+}
+
+.priority-location {
+  font-weight: 600;
+}
+
+.severity-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.severity-high {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.severity-medium {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+
+.severity-low {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--color-border);
+}
+
+.status-action {
+  color: var(--color-text-primary);
+  background: var(--color-surface-muted);
+}
+
+.status-monitor {
+  color: var(--color-accent-blue);
+  background: var(--color-accent-blue-soft);
+  border-color: transparent;
+}

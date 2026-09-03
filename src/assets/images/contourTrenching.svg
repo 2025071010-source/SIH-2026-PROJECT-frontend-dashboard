@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F1EEE0"/>
+  <rect width="400" height="90" fill="#E7E2CC"/>
+  <!-- hillside slope -->
+  <path d="M0 300 L0 90 L400 220 L400 300 Z" fill="#D8CDA0"/>
+  <!-- contour trench lines following the slope -->
+  <g stroke="#A98F5C" strokeWidth="4" strokeLinecap="round" fill="none">
+    <path d="M0 130 L360 250"/>
+    <path d="M0 170 L340 275"/>
+    <path d="M0 210 L300 292"/>
+    <path d="M0 250 L230 300"/>
+  </g>
+  <g stroke="#8F7748" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.7">
+    <path d="M0 138 L360 258"/>
+    <path d="M0 178 L340 283"/>
+  </g>
+  <!-- small vegetation catching along trenches -->
+  <g fill="#5FA06B">
+    <circle cx="60" cy="145" r="6"/>
+    <circle cx="140" cy="168" r="6"/>
+    <circle cx="220" cy="192" r="6"/>
+    <circle cx="90" cy="185" r="6"/>
+    <circle cx="180" cy="210" r="6"/>
+    <circle cx="260" cy="232" r="6"/>
+  </g>
+  <!-- distant hill crest with sparse trees -->
+  <g fill="#7DAE71">
+    <circle cx="330" cy="95" r="10"/>
+    <circle cx="350" cy="100" r="8"/>
+  </g>
+  <text x="14" y="24" fontFamily="Inter, sans-serif" fontSize="12" fontWeight="700" fill="#6B5A34">CONTOUR TRENCHING — Village C</text>
+</svg>

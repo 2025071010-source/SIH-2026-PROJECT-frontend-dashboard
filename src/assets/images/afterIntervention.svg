@@ -1,0 +1,43 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#E9F3EC"/>
+  <rect y="0" width="400" height="140" fill="#DCEEE1"/>
+  <!-- green rolling hills -->
+  <path d="M0 140 L60 105 L130 138 L200 100 L270 136 L340 108 L400 140 Z" fill="#BFE1CC"/>
+  <!-- ground -->
+  <rect y="140" width="400" height="160" fill="#A9CBA0"/>
+  <!-- terraced / trenched contours -->
+  <path d="M0 175 H400" stroke="#8FB688" strokeWidth="2" opacity="0.6"/>
+  <path d="M0 200 H400" stroke="#8FB688" strokeWidth="2" opacity="0.6"/>
+  <path d="M0 225 H400" stroke="#8FB688" strokeWidth="2" opacity="0.6"/>
+  <!-- wider, healthy water body -->
+  <path d="M0 250 C90 236 150 262 220 248 C290 236 340 258 400 246 L400 300 L0 300 Z" fill="#5FA0B3"/>
+  <path d="M0 250 C90 236 150 262 220 248 C290 236 340 258 400 246" fill="none" stroke="#4A8A9C" strokeWidth="2" opacity="0.6"/>
+  <!-- dense tree canopy clusters -->
+  <g fill="#3E8E5C">
+    <circle cx="55" cy="165" r="16"/>
+    <circle cx="72" cy="172" r="13"/>
+    <circle cx="40" cy="174" r="11"/>
+  </g>
+  <g fill="#3E8E5C">
+    <circle cx="330" cy="168" r="15"/>
+    <circle cx="348" cy="176" r="12"/>
+    <circle cx="314" cy="178" r="10"/>
+  </g>
+  <g fill="#3E8E5C">
+    <circle cx="190" cy="150" r="14"/>
+    <circle cx="206" cy="158" r="11"/>
+    <circle cx="176" cy="160" r="10"/>
+  </g>
+  <g fill="#4CA06B">
+    <circle cx="120" cy="195" r="9"/>
+    <circle cx="250" cy="205" r="9"/>
+    <circle cx="290" cy="185" r="8"/>
+  </g>
+  <!-- tree trunks -->
+  <g stroke="#5C4426" strokeWidth="3">
+    <path d="M55 181 L55 192"/>
+    <path d="M330 183 L330 194"/>
+    <path d="M190 164 L190 174"/>
+  </g>
+  <text x="16" y="28" fontFamily="Inter, sans-serif" fontSize="13" fontWeight="700" fill="#1E7A5C">AFTER — Jun 2026</text>
+</svg>

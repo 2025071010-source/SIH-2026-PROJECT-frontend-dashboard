@@ -1,0 +1,86 @@
+.summary-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.summary-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.summary-card-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.summary-value {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+}
+
+.summary-value-max {
+  font-size: 15px;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.summary-trend {
+  font-size: 12.5px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.summary-trend-up {
+  color: var(--color-success);
+}
+
+.summary-trend-down {
+  color: var(--color-danger);
+}
+
+.summary-trend-flat {
+  color: var(--color-text-tertiary);
+}
+
+.summary-card-ring-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.summary-ring-text {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  fill: var(--color-text-primary);
+}
+
+.summary-card-ring-caption {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}

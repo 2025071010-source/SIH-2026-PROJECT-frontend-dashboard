@@ -1,0 +1,66 @@
+.analysis-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.analytics-grid.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.insights-priority-grid.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.assessment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.assessment-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.assessment-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.assessment-value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1080px) {
+  .analytics-grid.analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  .insights-priority-grid.analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  .assessment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .assessment-grid {
+    grid-template-columns: 1fr;
+  }
+}

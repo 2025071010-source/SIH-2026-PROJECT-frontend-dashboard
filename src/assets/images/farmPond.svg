@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#EAF4EE"/>
+  <rect width="400" height="100" fill="#DCEEE1"/>
+  <path d="M0 100 L100 75 L200 98 L300 72 L400 96 L400 100 Z" fill="#C7E4D0"/>
+  <rect y="100" width="400" height="200" fill="#B3D6A6"/>
+  <!-- embankment ring -->
+  <ellipse cx="200" cy="205" rx="130" ry="72" fill="#9BC28A"/>
+  <!-- pond water -->
+  <ellipse cx="200" cy="205" rx="108" ry="56" fill="#4A8A9C"/>
+  <ellipse cx="200" cy="196" rx="108" ry="20" fill="#5FA0B3" opacity="0.6"/>
+  <!-- water ripples -->
+  <g stroke="#DCEEF2" strokeWidth="1.5" opacity="0.5" fill="none">
+    <path d="M120 205 Q200 195 280 205"/>
+    <path d="M130 220 Q200 212 270 220"/>
+  </g>
+  <!-- inlet channel -->
+  <path d="M60 140 C90 150 100 165 118 172" stroke="#6FA8BA" strokeWidth="10" fill="none" strokeLinecap="round"/>
+  <!-- crop rows near pond -->
+  <g stroke="#5C8A4A" strokeWidth="3" opacity="0.7">
+    <line x1="40" y1="255" x2="40" y2="285"/>
+    <line x1="55" y1="255" x2="55" y2="285"/>
+    <line x1="70" y1="255" x2="70" y2="285"/>
+    <line x1="330" y1="255" x2="330" y2="285"/>
+    <line x1="345" y1="255" x2="345" y2="285"/>
+    <line x1="360" y1="255" x2="360" y2="285"/>
+  </g>
+  <text x="14" y="24" fontFamily="Inter, sans-serif" fontSize="12" fontWeight="700" fill="#1E7A5C">FARM POND — Village D</text>
+</svg>
